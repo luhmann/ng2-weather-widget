@@ -26,4 +26,8 @@ export class WeatherWidget implements OnInit {
         error =>  this.errorMessage = <any>error
       );
   }
+
+  generateIconUrl() {
+    return `http://openweathermap.org/img/w/${this.weatherData.weather[0].icon}.png`;
+  }
 }

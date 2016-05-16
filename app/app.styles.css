@@ -1,7 +1,14 @@
 .app {
-  align-items: center;
-  display: flex;
   height: 100%;
-  justify-content: space-between;
   padding: 40px;
+}
+
+@media screen and (min-width: 400px) {
+  .app {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
