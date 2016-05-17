@@ -14,7 +14,7 @@ export class WeatherWidget implements OnInit {
   @Input()
   city: String;
 
-  weatherData: Object;
+  weatherData:any;
   errorMessage: Object;
   constructor(private weatherService: OpenWeatherApi) {};
 
